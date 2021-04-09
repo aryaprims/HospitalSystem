@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Open+Sans&display=swap");
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 16px;
+}
+
+.nav-item {
+	margin-left: 0.8cm;
+}
+
+.landing-navbar-item {
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.375rem;
+	font-weight: 600;
+}
+
+.landing-logo {
+	font-family: "Dancing Script", cursive;
+	font-size: 2.25rem;
+	font-weight: 600;
+}
+
+.landing-content {
+	background-color: #adb7d9;
+	min-height: 100vh;
+	padding: 2.5cm 0 1cm 0;
+	position: relative;
+}
+
+.landing-vector {
+	z-index: 1;
+}
+
+.landing-text-wrapper {
+	max-width: 650px;
+	position: relative;
+}
+
+.landing-text {
+	position: relative;
+	z-index: 1;
+	color: white;
+}
+
+.landing-text h1 {
+	font-size: 3.125rem;
+	font-weight: 600;
+	font-family: "Open Sans", sans-serif;
+}
+
+.landing-text p {
+	font-size: 1.5rem;
+	font-family: "Montserrat", sans-serif;
+	margin: 1.3em 0;
+}
+
+.small-circle {
+	background: url("../img/landing/circle-small.png") no-repeat center center;
+	background-size: contain;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: -1.8cm;
+	left: -1.8cm;
+}
+
+.big-circle {
+	background: url("../img/landing/circle-big.png") no-repeat center center;
+	background-size: contain;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 295px;
+	height: 270px;
+}
+
+.big-sign-up-button {
+	display: inline-block;
+	font-size: 2.188rem;
+	background-color: #6c63ff;
+	padding: 0.8em 1em;
+	border-radius: 13px;
+	color: white;
+	margin-top: 1em;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+}
+
+.big-sign-up-button:hover {
+	color: white;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.sign-in-form {
+	max-width: 450px;
+	width: 100%;
+	z-index: 1;
+	font-family: "Open Sans", sans-serif;
+}
+
+.sign-in-form .card {
+	height: inherit;
+	width: 100%;
+	background-color: #6c63ff;
+	min-height: 580px;
+}
+
+.sign-in-form .card-header {
+	font-size: 2.25rem;
+	color: white;
+}
+
+.sign-in-form label {
+	color: white;
+	font-size: 1.3rem;
+}
+
+.sign-in-form input {
+	background-color: #a4a3e6;
+	outline: none;
+	border: #a4a3e6;
+	color: white;
+}
+
+/* -------------- SideNav ------------------ */
+.side-nav-wrapper {
+	padding: 0;
+	position: sticky;
+	height: 93vh;
+	overflow: auto;
+	top: 66px;
+	left: 0;
+	background-color: white;
+	z-index: 1;
+}
+
+.side-nav-container a {
+	display: block;
+	padding: 10px 14px;
+	color: black;
+	margin: 8px;
+	border-radius: 25px;
+}
+
+.side-nav-container a.hide-nav {
+	display: none;
+}
+
+.side-nav-container a:hover {
+	background-color: #adb7d9;
+	color: white;
+}
+
+.side-nav-container a.active {
+	background-color: #adb7d9;
+	color: white;
+}
+
+.side-nav-container a i {
+	margin-right: 7px;
+}
+
+@media only screen and (max-width: 769px) {
+	.side-nav-wrapper#sideNav {
+		height: 300px;
+		width: 100%;
+	}
+}
+
+/* -------------- TopNav ------------------ */
+.dashboard-navbar {
+	border-bottom: 2px solid black;
+}
+
+.dashboard-brand {
+	width: 16.66%;
+	background-color: #adb7d9;
+}
+
+.dashboard-navbar .navbar-nav #menuUser {
+	position: relative;
+}
+
+.dashboard-navbar .navbar-nav #menuUser:hover {
+	cursor: pointer;
+}
+
+.dashboard-navbar .navbar-nav #floatingMenu {
+	position: absolute;
+	/* bottom: -60px; */
+	right: 0;
+	width: 180px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.dashboard-navbar .navbar-nav #floatingMenu a {
+	display: block;
+	padding: 5px 10px;
+}
+
+@media only screen and (max-width: 1256px) {
+	.dashboard-brand {
+		width: 25%;
+	}
+}
+
+@media only screen and (max-width: 769px) {
+	.dashboard-brand {
+		width: 100%;
+		background-color: white;
+	}
+
+	.dashboard-navbar {
+		flex-wrap: nowrap;
+	}
+}
+
+/* -------------- Dashboard ------------------ */
+.dashboard-wrapper {
+	min-height: 100vh;
+	padding-top: 66px;
+	background-color: #adb7d9;
+}
+
+.dashboard-card {
+	margin-top: 20px;
+	padding: 45px;
+	background-color: rgba(108, 99, 255, 0.2);
+	border-radius: 100px;
+}
+
+.dashboard-card header {
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+.dashboard-card article {
+	font-size: 1.5rem;
+}
+
+.dashboard-image-container {
+	min-height: 280px;
+	justify-content: space-evenly;
+}
+
+.dashboard-image-container img {
+	margin: 10px;
+}
+
+.carousel .slide, .carousel-inner {
+	border-radius: 100px;
+}
+
+.carousel-item img {
+	width: 100%;
+	height: 500px;
+}
+
+.carousel-caption {
+	background-color: rgba(0, 0, 0, 0.4);
+}
